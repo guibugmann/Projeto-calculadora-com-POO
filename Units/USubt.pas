@@ -1,0 +1,22 @@
+unit USubt;
+
+interface
+
+uses
+  UOperacao;
+
+Type
+  TSubt = class(TOperacao)
+  public
+    function Calcular: Double; override;
+  end;
+
+implementation
+
+function TSubt.Calcular: Double;
+  begin
+    Result := valor1-valor2;
+  end;
+
+
+end.

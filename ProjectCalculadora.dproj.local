@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2026/11/19 10:53:54.737.pas,C:\Users\Guilherme.Bugmann\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\Guilherme.Bugmann\Documents\Calculadora POO\Unit1.pas</Transaction>
+    <Transaction>2026/11/19 10:53:54.737.dfm,C:\Users\Guilherme.Bugmann\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\Guilherme.Bugmann\Documents\Calculadora POO\Unit1.dfm</Transaction>
+    <Transaction>2026/11/19 10:53:55.787.dproj,C:\Users\Guilherme.Bugmann\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\Guilherme.Bugmann\Documents\Calculadora POO\Project1.dproj</Transaction>
+    <Transaction>2026/11/19 14:39:08.199.dproj,C:\Users\Guilherme.Bugmann\Documents\Calculadora POO\Project1.dproj=C:\Users\Guilherme.Bugmann\Documents\Projeto calculadora com POO\ProjectCalculadora.dproj</Transaction>
+    <Transaction>2026/11/19 14:40:08.827.pas,C:\Users\Guilherme.Bugmann\Documents\Calculadora POO\Unit1.pas=C:\Users\Guilherme.Bugmann\Documents\Projeto calculadora com POO\Units\UCalculadora.pas</Transaction>
+    <Transaction>2026/11/19 14:40:08.827.dfm,C:\Users\Guilherme.Bugmann\Documents\Calculadora POO\Unit1.dfm=C:\Users\Guilherme.Bugmann\Documents\Projeto calculadora com POO\Units\UCalculadora.dfm</Transaction>
+    <Transaction>2026/11/19 14:43:28.784.pas,C:\Users\Guilherme.Bugmann\Documents\Projeto calculadora com POO\Unit1.pas=C:\Users\Guilherme.Bugmann\Documents\Projeto calculadora com POO\Units\USoma.pas</Transaction>
+    <Transaction>2026/11/19 14:46:51.195.pas,C:\Users\Guilherme.Bugmann\Documents\Projeto calculadora com POO\Unit1.pas=C:\Users\Guilherme.Bugmann\Documents\Projeto calculadora com POO\Units\USubt.pas</Transaction>
+    <Transaction>2026/11/19 14:48:23.556.pas,C:\Users\Guilherme.Bugmann\Documents\Projeto calculadora com POO\Unit1.pas=C:\Users\Guilherme.Bugmann\Documents\Projeto calculadora com POO\Units\UMult.pas</Transaction>
+    <Transaction>2026/11/19 14:49:51.472.pas,C:\Users\Guilherme.Bugmann\Documents\Projeto calculadora com POO\Unit1.pas=C:\Users\Guilherme.Bugmann\Documents\Projeto calculadora com POO\Units\UDivi.pas</Transaction>
+    <Transaction>2026/11/23 08:48:54.348.pas,C:\Users\Guilherme.Bugmann\Documents\Projeto calculadora com POO\Unit1.pas=C:\Users\Guilherme.Bugmann\Documents\Projeto calculadora com POO\Units\UOperacao.pas</Transaction>
+    <Transaction>2026/11/23 13:00:40.234.pas,C:\Users\Guilherme.Bugmann\Documents\Projeto calculadora com POO\Unit1.pas=C:\Users\Guilherme.Bugmann\Documents\Projeto calculadora com POO\Units\UPote.pas</Transaction>
+  </Transactions>
+</BorlandProject>

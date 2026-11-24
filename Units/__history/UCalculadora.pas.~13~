@@ -1,0 +1,87 @@
+unit UCalculadora;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, UOperacao, USoma, USubt, UMult, UDivi;
+
+type
+  TForm1 = class(TForm)
+
+    edN1: TEdit;
+    edN2: TEdit;
+
+    Label1: TLabel;
+    Label2: TLabel;
+    resultado: TLabel;
+
+    btSoma: TButton;
+    btSubt: TButton;
+    btDivi: TButton;
+    btMult: TButton;
+
+    procedure btSomaClick(Sender: TObject);
+    procedure btSubtClick(Sender: TObject);
+    procedure btDiviClick(Sender: TObject);
+    procedure btMultClick(Sender: TObject);
+
+  private
+    procedure ExecutarOperacao(AOperacao:TOperacao);
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+  {$R *.dfm}
+
+procedure TForm1.btDiviClick(Sender: TObject);
+begin
+  ExecutarOperacao(TDivi.Create);
+end;
+
+procedure TForm1.btMultClick(Sender: TObject);
+begin
+  ExecutarOperacao(TMult.Create);
+end;
+
+procedure TForm1.btSomaClick(Sender: TObject);
+begin
+  ExecutarOperacao(TSoma.Create);
+end;
+
+procedure TForm1.btSubtClick(Sender: TObject);
+begin
+  ExecutarOperacao(TSubt.Create);
+end;
+
+procedure TForm1.ExecutarOperacao(AOperacao: TOperacao);
+
+  var
+    n1,n2,dResultado: double;
+
+  begin
+  try
+    try
+
+      AOperacao.valor1Txt := edN1.Text;
+      AOperacao.valor2Txt := edN2.Text;
+
+      dResultado:= AOperacao.calcular;
+
+      resultado.Caption:= FloatToStr(dResultado);
+
+    except
+      on E: Exception do
+         ShowMessage(E.Message);
+    end;
+  finally
+      AOperacao.Free;
+
+  end;
+end;
+end.

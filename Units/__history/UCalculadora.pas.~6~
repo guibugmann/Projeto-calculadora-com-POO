@@ -1,0 +1,72 @@
+unit UCalculadora;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls;
+
+type
+  TOperacao = class
+  private
+    FValor1: Double;
+    FValor2: Double;
+
+  public
+    property valor1: double read FValor1 write FValor1;
+    property valor2: double read FValor2 write FValor2;
+
+    function Calcular: double; virtual; abstract;
+  end;
+
+type
+  TForm1 = class(TForm)
+    edN1: TEdit;
+    edN2: TEdit;
+
+    Label1: TLabel;
+    Label2: TLabel;
+
+    resultado: TLabel;
+
+  private
+    procedure ExecutarOperacao(AOperacao:TOperacao);
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+  procedure TForm1.ExecutarOperacao(AOperacao: TOperacao);
+
+  var
+    n1,n2: double;
+    dResultado: double;
+  begin
+    try
+      n1:=StrToFloat(edN1.text);
+      n2:=StrToFloat(edN2.text);
+
+      AOperacao.valor1 := n1;
+      AOperacao.valor2 := n2;
+
+      dResultado:= AOperacao.calcular;
+
+      resultado.Caption:= FloatToStr(dResultado);
+
+      AOperacao.Free;
+    except
+      on E: Exception do
+         ShowMessage(E.Message);
+    end;
+  end;
+
+
+
+  {$R *.dfm}
+
+end.

@@ -1,0 +1,55 @@
+unit UOperacao;
+
+interface
+
+type
+  TOperacao = class
+  private
+    FValor1: Double;
+    FValor2: Double;
+
+    function getFValor1: String;
+    function getFValor2: String;
+    function setFValor1: String;
+    function setFValor2: String;
+
+    public
+    property valor1: double read FValor1 write FValor1;
+    property valor2: double read FValor2 write FValor2;
+
+    property valor1Txt: String read getFValor1 write setFValor1;
+    property valor2Txt: String read getFValor2 write setFValor2;
+
+    function Calcular: double; virtual; abstract;
+  end;
+
+  uses
+    SysUtils
+//Function retorna valor
+  function TOperacao.getFValor1: String;
+  begin
+    Result:= 'Você digitou: '+ FloatToStr(FValor1);
+  end;
+//Function retorna valor
+  function TOperacao.getFValor2: String;
+  begin
+    Result:= 'Você digitou: '+ FloatToStr(FValor2);
+  end;
+//Procedure nao retorna valor
+  procedure TOperacao.SetFValor1(const Value: String);
+  begin
+    FValor1:= StrToFloat(Value);
+  end;
+//Procedure nao retorna valor
+  procedure TOperacao.SetFValor1(const Value: String);
+  begin
+    FValor2:= StrToFloat(Value);
+  end;
+
+
+
+implementation
+
+
+
+end.

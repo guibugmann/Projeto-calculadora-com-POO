@@ -1,0 +1,28 @@
+unit UPote;
+
+interface
+
+uses
+UOperacao;
+
+Type
+  TPote= class(TOperacao)
+  public
+    function Calcular: Double; override;
+  end;
+
+implementation
+
+function TPote.Calcular: Double;
+var
+guardar: Double;
+
+begin
+guardar:= valor1;
+for I := 1 to valor2 do
+    begin
+    guardar=guardar*valor1;
+    end;
+
+end;
+end.

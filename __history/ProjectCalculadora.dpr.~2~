@@ -1,0 +1,15 @@
+program ProjectCalculadora;
+
+uses
+  Forms,
+  UCalculadora in 'Units\UCalculadora.pas' {Form1},
+  USoma in 'Units\USoma.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

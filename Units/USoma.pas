@@ -1,0 +1,22 @@
+unit USoma;
+
+interface
+
+uses
+  UOperacao;
+
+Type
+  TSoma = class(TOperacao)
+  public
+    function Calcular: Double; override;
+  end;
+
+implementation
+
+function TSoma.Calcular: double;
+  begin
+    Result := valor1+valor2;
+  end;
+
+
+end.

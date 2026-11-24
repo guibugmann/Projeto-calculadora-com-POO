@@ -1,0 +1,20 @@
+unit UOperacao;
+
+interface
+
+type
+  TOperacao = class
+  private
+    FValor1: Double;
+    FValor2: Double;
+
+    public
+    property valor1: double read FValor1 write FValor1;
+    property valor2: double read FValor2 write FValor2;
+
+    function Calcular: double; virtual; abstract;
+  end;
+
+implementation
+
+end.

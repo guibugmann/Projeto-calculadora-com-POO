@@ -1,0 +1,26 @@
+unit UDivi;
+
+interface
+
+uses
+  UOperacao;
+
+Type
+  TDivi= class(TOperacao)
+  public
+    function Calcular: Double; override;
+  end;
+
+implementation
+
+uses
+      Systen.SysUtils;
+
+function TDivi.Calcular: double;
+  begin
+    if valor2 = 0 then
+    raise Exception.Create('Não é possivel dividir por ZERO!');
+  end;
+
+
+end.

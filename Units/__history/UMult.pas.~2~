@@ -1,0 +1,22 @@
+unit UMult;
+
+interface
+Type
+  TMulti= class(TOperacao)
+  public
+    function Calcular: Double; override;
+  end;
+
+  btMulti: TButton;
+
+  procedure btMultiClick(Sender: TObject);
+
+implementation
+
+  function TMulti.Calcular: Double;
+  begin
+    Result := valor1*valor2;
+  end;
+
+
+end.
